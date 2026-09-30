@@ -26,6 +26,14 @@
     "mcp-installer": {
       "command": "npx",
       "args": ["@anaisbetts/mcp-installer"]
+    },
+    "dataforseo": {
+      "command": "npx",
+      "args": ["-y", "dataforseo-mcp-server"],
+      "env": {
+        "DATAFORSEO_USERNAME": "${DATAFORSEO_USERNAME}",
+        "DATAFORSEO_PASSWORD": "${DATAFORSEO_PASSWORD}"
+      }
     }
   }
 }
