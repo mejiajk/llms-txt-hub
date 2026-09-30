@@ -1,31 +1,32 @@
 {
   "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/david.dias/Projects"]
-    },
     "playwright": {
       "command": "npx",
-      "args": ["-y", "@executeautomation/playwright-mcp-server"]
-    },
-    "memory": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"],
-      "env": {
-        "MEMORY_FILE_PATH": "/Users/david.dias/Projects/llms-txt-hub-memory.json"
-      }
+      "args": [
+        "-y",
+        "@executeautomation/playwright-mcp-server"
+      ]
     },
     "webresearch": {
       "command": "npx",
-      "args": ["-y", "@mzxrai/mcp-webresearch@latest"]
+      "args": [
+        "-y",
+        "@mzxrai/mcp-webresearch@latest"
+      ]
     },
     "docs-manager": {
       "command": "npx",
-      "args": ["-y", "mcp-docs-service"]
+      "args": [
+        "-y",
+        "mcp-docs-service"
+      ]
     },
     "dataforseo": {
       "command": "npx",
-      "args": ["-y", "dataforseo-mcp-server"],
+      "args": [
+        "-y",
+        "dataforseo-mcp-server"
+      ],
       "env": {
         "DATAFORSEO_USERNAME": "${DATAFORSEO_USERNAME}",
         "DATAFORSEO_PASSWORD": "${DATAFORSEO_PASSWORD}"
@@ -33,7 +34,9 @@
     },
     "mcp-installer": {
       "command": "npx",
-      "args": ["@anaisbetts/mcp-installer"]
+      "args": [
+        "@anaisbetts/mcp-installer"
+      ]
     }
   }
 }
